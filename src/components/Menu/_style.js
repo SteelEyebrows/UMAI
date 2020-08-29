@@ -1,15 +1,16 @@
 import styled,{keyframes} from 'styled-components';
 
-export const StyledBrand =styled.div`
+export const StyledMenu =styled.div`
 
-    
+   
 .inner{
     width:100%;
     height:100%;
     padding:100px;
         &-left{
-            position:absolute;
             display:flex;
+            width:100vw;
+            height:200px;
             h1{
                 color:#fff;
                 font-size:5rem;
@@ -17,15 +18,12 @@ export const StyledBrand =styled.div`
             }
         }
         &-right{
-            position:absolute;
-            bottom:50px;
-            right:100px;
-            display:flex;
-            width:40%;         
-            p{
-                color:#fff;
-                font-size:1rem;
-                z-index:3;
+            display:flex;    
+            .cards{
+                width:100vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+                grid-gap: 1rem;
             }
         }
 }
@@ -39,22 +37,21 @@ export const StyledBrand =styled.div`
     height: 100%; 
     overflow: hidden; 
     z-index: -1; 
-}
-video { 
-    display: block; 
-    width: 100%; 
-    height: auto; 
+    img{
+        display: block; 
+        width: 100%; 
+        height: auto; 
+    }
 }
 
 .fullsize-video-bg { 
     height: 100%; 
     overflow: hidden; 
 }
-
 .fullsize-video-bg:before { 
     content: ""; 
     background: rgba(0,0,0,.9); 
-    position: absolute; 
+    position: fixed; 
     top: 0; 
     left: 0;
     width: 100%; 
@@ -65,21 +62,11 @@ video {
     content: ""; 
     background-image:radial-gradient(black 1px, transparent 0);
     background-size: 3px 3px; 
-    position: absolute; 
+    position: fixed; 
     top: 0; 
     left: 0; 
     width: 100%; 
     height: 100%; 
     z-index: 1; 
-}
-
-@media (max-width: 700px) {
-    #video-viewport{
-        visibility:hidden;
-    }
-    &__content {
-        display: none;
-    }
-}
 }
 `;

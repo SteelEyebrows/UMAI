@@ -8,6 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
   @font-face { font-family: 'Estillon'; src: url('Estillon') format('ttf'); font-weight: normal; font-style: normal; }
   @font-face {
     font-family: 'Chosunilbo_myungjo';
@@ -21,4 +27,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  p{
+    font-family: 'GmarketSansLight';
+    color:#fff;
+  }
 `;

@@ -16,18 +16,18 @@ const source = {
   ],
   pairs:[
     {
-      img1:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo1.jpg',
-      img2:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo2.jpg',
+      img1:'https://yumai.s3.ap-northeast-2.amazonaws.com/main/pair1.jpg',
+      img2:'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAzMTNfOCAg%2FMDAxNTg0MDgxODQzMjcy.fCcYi7AYFYAT9YUHXaCjVspLl1SKrFNw0ei9k2HvFUAg.YVV0pVigAHGTpTRz_zJX_Op-zTiTYmkEGultHWSi4MIg.JPEG.catch100%2F002.jpg',
       sentence:['일본 현지의','맛과 감성을 위한','전문가들의','끝없는 연구.']
     },
     {
-      img1:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo3.jpg',
-      img2:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo4.jpg',
+      img1:'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzA1MTBfMjc3%2FMDAxNDk0Mzg2MTM2MDgy.miB7cNoI4ehBvSg2kmBUZLQA8vlhvtqNtPftKYsYudcg.fy05_xgTd9zt5fOcW1nisqjjpM0qp_ktdgrh5omOclUg.JPEG.88missha%2FKakaoTalk_20170510_121046009.jpg',
+      img2:'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA4MTRfMjE1%2FMDAxNTk3MzM2NDExMDYx.q9SD8Es3N_vZFiKWA0y0GItSXThgi6Tl1yNwzJsnnSUg.wG8DE3er7-xwfaZh3RwLj8efhUAUI_6u8tLH6iqcA_gg.JPEG.98wldus%2FS__3121201.jpg',
       sentence:['차별화된','최상의 가치를','고객에게 보장하는','장인정신과 철학.']
     },
     {
-      img1:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo5.jpg',
-      img2:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/58281/photo6.jpg',
+      img1:'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDlfMTA1%2FMDAxNTk0MzAyMDIwNzUw.f3Z7RzcvY9XrHE2Q54bd9-pWtmqKSA0e2o2juoTC-Ekg.uF-NunuW0-i8PN7OusnyKkFr2oGmufPcnif-pvcd7BMg.JPEG.jie_jeong%2FIMG_3567.jpg',
+      img2:'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA3MTFfMTE5%2FMDAxNTYyODM3MzI4Mzc4.zqavVzvPFBXeNbb4Wtv8K9YZrB5ESbvCvTw3uJZDZdsg.ki4WbgsFDKtHv0QPldPoQE5LiRjuppyLMHQj-PYNJ7Ag.JPEG.sonduksonduk%2FIMG_2751.JPG',
       sentence:[]
     },
   ]
@@ -39,38 +39,7 @@ const Home = ({
 
  return (
     <>			 
-      <StyledHome>
-      <nav className="nav nav--left js-nav">
-          <ul>
-            <li>
-              <img className="logo" src={source.logo} />
-            </li>
-            {
-              source.menu.map((item,i)=>{
-                return(
-                  <li>
-                     <Link className="link" to={item.link}>{item.name}</Link>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </nav>
-
-        <nav className="nav nav--right">
-          <ul>
-            <li>
-              <a href="https://twitter.com/Jesper_Landberg?lang=en" target="_blank"><span>Say hi</span></a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Cart</span>
-                <div className="cart-total">0</div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
+      <StyledHome>  
         <div className="slider js-slider">
           <div className="slider__inner js-slider__inner"></div>
             {
@@ -116,10 +85,11 @@ const Home = ({
         </div>
 
         <div className="vert-text">
-          <span>
-            Wings+Horns<br/>
-            X Kyoto Black
-          </span>
+          <p>
+            경기도 안양시 동안구 범계동<br/>
+            평촌대로227번길 26<br/>
+            <b>031-384-8340</b>
+          </p>
         </div>
       </StyledHome>
 		</>

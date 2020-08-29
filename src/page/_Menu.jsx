@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {MainTemplate} from 'components';
 import Navigation from 'components/Common/Navigation';
-import {BrandContainer} from 'containers';
+import {MenuContainer} from 'containers';
         
-const Brand = ({history}) =>(
+const Menu = ({history}) =>(
     <MainTemplate header={<Navigation />}>
-        <BrandContainer history={history}/>
+        <MenuContainer history={history}/>
     </MainTemplate>
 );
 
-export default Brand;
+export default Menu;

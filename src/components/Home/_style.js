@@ -25,13 +25,6 @@ export const StyledHome =styled.div`
     z-index: 10;
   }
   
-  .logo{
-    width:100px;
-    height:auto;
-    margin-bottom:-20px;
-  }
-  
-  
   ul, li{
     list-style: none;
     padding: 0;
@@ -42,14 +35,6 @@ export const StyledHome =styled.div`
     position: absolute;
     top: 2rem;
     z-index: 10;
-    
-    &--left{
-      left: 1rem;
-    }
-    
-    &--right{
-      right: 1rem;
-    }
     
     ul{
       display: flex;
@@ -107,18 +92,8 @@ export const StyledHome =styled.div`
     right: 2rem;
     width: 15rem;
     display: flex;
-    align-items: center;
+    align-items: right;
     z-index: 10;
-    
-    span{
-      display: block;
-      color: #fff;
-      text-transform: uppercase;
-      line-height: 1.1;
-      transform: rotate(-90deg) translateY(15rem);
-      transform-origin: bottom left;
-      font-size: 1.35rem;
-    }
   }
   
   .cart-total{
@@ -226,6 +201,7 @@ export const StyledHome =styled.div`
       margin: 0;
       min-width: 12.5rem;
       transform-origin: top;
+      filter: grayscale(100%);
       
       &:first-child{
         top: -1.5rem;

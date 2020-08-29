@@ -348,7 +348,7 @@ const HomeContainer = ({history,match}) =>{
     
     useEffect(
 		() => { 
-      if(mouseWheel%100===0){
+      if(mouseWheel!==0 || mouseWheel%100===0){
         nextSlide();
         console.log('@@@@@@@@@@@@@@@');
       }

@@ -1,4 +1,4 @@
-import {Home,Brand} from 'page';
+import {Home,Brand,Menu} from 'page';
 
 
 export const routes =[
@@ -10,6 +10,11 @@ export const routes =[
     {
         path:'/brand',
         page:Brand,
+        exact:true
+    },
+    {
+        path:'/menu',
+        page:Menu,
         exact:true
     },
 ]
