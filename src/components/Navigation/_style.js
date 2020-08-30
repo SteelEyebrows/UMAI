@@ -2,14 +2,16 @@ import styled,{keyframes} from 'styled-components';
 
 export const StyledNavigation = styled.nav`
         position: fixed;
+        display:flex;
+        justify-content: space-between;
         width: 100%; 
         height:50px;
         z-index:10001;
         background:rgba(0,0,0,0);
+        margin-top:30px;
         .logo{
             width:100px;
             height:auto;
-            margin-bottom:-20px;
             }
 
         ul{
@@ -21,6 +23,13 @@ export const StyledNavigation = styled.nav`
                 text-decoration: none;
                 margin-left:10px;
                 margin-right:10px;
+            }
+            .sns{
+                img{
+                    width:40px;
+                    height:40px;
+                    margin-right:10px;
+                }
             }
         }
 `;

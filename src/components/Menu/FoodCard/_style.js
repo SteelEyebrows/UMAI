@@ -20,8 +20,6 @@ export const StyledFoodCard = styled.div`
     border-radius: 50%;
     border: 2px solid;
     margin-bottom:50px;
-    z-index:2;
-
   }
   
   .logo {
@@ -49,13 +47,12 @@ export const StyledFoodCard = styled.div`
     border: 2px solid;
     cursor: pointer;
     z-index:3;
-  }
-  
-  .button:hover {
-    color: #000;
-    background: #fff;
-    border-color: #fff;
-  }
+    &:hover {
+        color: #000;
+        background: #fff;
+        border-color: #fff;
+      }  
+    }
   
 
   .text {

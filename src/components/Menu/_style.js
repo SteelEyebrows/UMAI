@@ -11,6 +11,7 @@ export const StyledMenu =styled.div`
             display:flex;
             width:100vw;
             height:200px;
+            text-align:center;
             h1{
                 color:#fff;
                 font-size:5rem;

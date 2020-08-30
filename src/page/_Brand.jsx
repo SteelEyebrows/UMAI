@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {MainTemplate} from 'components';
-import Navigation from 'components/Common/Navigation';
+import {MainTemplate,Navigation,Footer} from 'components';
 import {BrandContainer} from 'containers';
         
 const Brand = ({history}) =>(

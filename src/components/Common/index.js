@@ -1,1 +1,1 @@
-export {default} from './Navigation';
+export {default as Modal} from './Modal';

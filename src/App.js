@@ -12,7 +12,7 @@ function App() {
           name:'des',
           content:'content'
         }]}
-        title="Template"/>
+        title="범계 우마이식당"/>
         <Switch>
           {
             routes.map(({path,page,exact},i)=>(

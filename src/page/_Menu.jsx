@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {MainTemplate} from 'components';
-import Navigation from 'components/Common/Navigation';
+import {MainTemplate,Navigation,Footer} from 'components';
 import {MenuContainer} from 'containers';
         
 const Menu = ({history}) =>(

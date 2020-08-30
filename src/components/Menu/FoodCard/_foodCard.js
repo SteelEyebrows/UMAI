@@ -3,8 +3,8 @@ import { withRouter } from "react-router-dom";
 import {StyledFoodCard} from './_style';
 import {Link} from 'react-router-dom';
 import gsap, {TweenMax,TimelineMax, Sine,Power4,Expo,Linear } from 'gsap';
-
-
+import {Modal} from 'components/Common';
+import ModalContents from '../ModalContents';
 const FoodCard = ({   
   image
 }) => {
@@ -51,7 +51,9 @@ const FoodCard = ({
               </g>
             </svg>
           </div>
-          <div className="button">제품명</div>
+          <Modal>
+            <ModalContents image={image}/>
+          </Modal>
         </div>
       </div>
   </StyledFoodCard>

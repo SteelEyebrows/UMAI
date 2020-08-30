@@ -85,8 +85,8 @@ const HomeContainer = ({history,match}) =>{
 
   const images = [
     'https://yumai.s3.ap-northeast-2.amazonaws.com/main/1.jpg',
-    'https://yumai.s3.ap-northeast-2.amazonaws.com/main/2.jpg',
-    'https://yumai.s3.ap-northeast-2.amazonaws.com/main/3.jpg'
+    'https://yumai.s3.ap-northeast-2.amazonaws.com/main/4.jpg',
+    'https://yumai.s3.ap-northeast-2.amazonaws.com/main/2.jpg'
   ];
   
   const setup =()=> {
@@ -340,7 +340,7 @@ const HomeContainer = ({history,match}) =>{
       createMesh();
       setStyles();
       render();
-      console.log('-----------------------');
+      nextSlide();
     },
 		[],
     );
@@ -348,9 +348,8 @@ const HomeContainer = ({history,match}) =>{
     
     useEffect(
 		() => { 
-      if(mouseWheel!==0 || mouseWheel%100===0){
+      if(mouseWheel!==0 && mouseWheel%100===0){
         nextSlide();
-        console.log('@@@@@@@@@@@@@@@');
       }
     },
 		[mouseWheel],

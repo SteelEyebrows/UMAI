@@ -85,11 +85,10 @@ const Home = ({
         </div>
 
         <div className="vert-text">
-          <p>
+          <span>
             경기도 안양시 동안구 범계동<br/>
             평촌대로227번길 26<br/>
-            <b>031-384-8340</b>
-          </p>
+          </span>
         </div>
       </StyledHome>
 		</>

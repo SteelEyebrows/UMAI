@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import {StyledMenu} from './_style';
 import FoodCard from './FoodCard';
 import {Link} from 'react-router-dom';
+import {Modal} from 'components/Common';
 
 const source = [
   "https://yumai.s3.ap-northeast-2.amazonaws.com/menu/KakaoTalk_20200828_152546791_01.png",

@@ -8,7 +8,7 @@ export const StyledHome =styled.div`
     justify-content: center;
     font-family: 'helvetica neue', helvetica, sans-serif;
     overflow: hidden;
-  
+    background:#111;
   a{
     color: #fff;
     text-decoration: none;
@@ -94,6 +94,16 @@ export const StyledHome =styled.div`
     display: flex;
     align-items: right;
     z-index: 10;
+      
+    span{
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.1;
+      transform: rotate(-90deg) translateY(15rem);
+      transform-origin: bottom left;
+      font-size: 15px;
+    }
   }
   
   .cart-total{
@@ -202,7 +212,7 @@ export const StyledHome =styled.div`
       min-width: 12.5rem;
       transform-origin: top;
       filter: grayscale(100%);
-      
+
       &:first-child{
         top: -1.5rem;
       }
