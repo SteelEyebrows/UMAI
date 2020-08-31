@@ -2,7 +2,7 @@ import React,{useEffect,useRef} from "react";
 import { withRouter } from "react-router-dom";
 import {StyledHome} from './_style';
 import {Link} from 'react-router-dom';
-
+import {Loading} from 'components/Common';
 const source = {
   logo:"https://yumai.s3.ap-northeast-2.amazonaws.com/main/yumaiLogo.png",
   menu:[
@@ -38,7 +38,8 @@ const Home = ({
 }) => {
 
  return (
-    <>			 
+    <>
+      <Loading/>			 
       <StyledHome>  
         <div className="slider js-slider">
           <div className="slider__inner js-slider__inner"></div>
